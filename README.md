@@ -1,5 +1,3 @@
-[TOC]
-
 # `CNKI to Zotero.py`
 
 ## 编写目的
