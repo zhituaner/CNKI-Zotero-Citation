@@ -1,6 +1,6 @@
 # `CNKI to Zotero.py`
 
-注：写完此程序后不久，我突然发现**Zotero6.0-beta的Zotero Connector已支持批量导出知网文献**。哎，就当是练手了qaq……（2022.2.18补充）
+注：写完此程序后不久，我突然发现**Zotero6.0-beta的Zotero Connector已支持批量导出知网文献**。哎，就当是练手了qaq……（另一个程序也许还有用）（2022.2.18补充）
 
 ## 编写目的
 
