@@ -1,5 +1,7 @@
 # `CNKI to Zotero.py`
 
+注：写完此程序后不久，我突然发现**Zotero6.0-beta的Zotero Connector已支持批量导出知网文献**。哎，就当是练手了qaq……（2022.2.18补充）
+
 ## 编写目的
 
 **将所需:white_check_mark:知网文献自动化、批量导入Zotero。**（“所需”指检索结果页中，复选框处于勾选状态√的文献；目前尚未发现将知网文献批量导入Zotero的方法）
