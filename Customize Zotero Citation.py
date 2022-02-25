@@ -57,8 +57,8 @@ def Citation():
     # ★（期刊文章、报纸文章、会议论文类）期刊名【'Publication Title'】；卷【'Volume'】；期【'Issue'】
     if ItemType in ['journalArticle','newspaperArticle','conferencePaper']:
         PublicationTitle=data['Publication Title'] if data['Publication Title'] else '【】'
-        Volume=int(eval(data['Volume'])) if data['Volume'] else '【】'
-        Issue=int(eval(data['Issue'])) if data['Issue'] else '【】'
+        Volume=data['Volume'] if data['Volume'] else '【】'
+        Issue=data['Issue'] if data['Issue'] else '【】'
         citation=f'{Author}：《{Title}》，《{PublicationTitle}》{PublicationYear}年第{Issue}期。'
     # ★（书籍、图书章节类）出版社【'Publisher'】；出版地【'Place'】
     elif ItemType in ['book','bookSection']:
@@ -97,6 +97,7 @@ while input_title !='': # 直接回车可结束运行
         result_check=confirm(title='Citation',text=f'检索【{input_title}】得到多个结果，请选择作者：',buttons=result_authors)
         for x in result:
             if x['Author']==result_check:
+                data=x
                 print(f'{count}【文献】{data}')
                 Citation()
                 count+=1
