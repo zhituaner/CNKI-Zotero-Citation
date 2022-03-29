@@ -25,12 +25,12 @@ try:
     dbname,filename=url_result[0][0],url_result[0][1]
 except:
     try:
-        url_obj=re.compile(r'filename=(.*?)&dbname=(.*?)&',re.S)
+        url_obj=re.compile(r'filename=(.*?)&dbcode=.*?&dbname=(.*?)&',re.S)
         url_result=url_obj.findall(url)
         assert url_result !=[]
         dbname,filename=url_result[0][1],url_result[0][0]
     except:
-        url_obj=re.compile(r'filename=(.*?)&dbcode=.*?&dbname=(.*?)&',re.S)
+        url_obj=re.compile(r'filename=(.*?)&dbname=(.*?)&',re.S)
         url_result=url_obj.findall(url)
         assert url_result !=[]
         dbname,filename=url_result[0][1],url_result[0][0]
