@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-# 输入：从剪切板读取知网文献详情页URL；输出：生成该文献Bibtex并自动复制
 
 import re
 import os
