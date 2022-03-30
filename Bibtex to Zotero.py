@@ -111,7 +111,7 @@ try: # 页码
     obj_pagecount=re.compile(r'PageCount-页码:(.*?)<br>',re.S)
     pagecount=obj_pagecount.findall(info)[0].replace(' ','')
 except:
-    period=''
+    pagecount=''
 
 # bibtex='''@article{title = {%s},author = {%s},year = {%s},journal = {%s},volume = {%s},number = {%s},\
 # pages = {%s},url = {%s},abstract = {%s}}''' %(title,author,year,source,volume,period,pagecount,url,summary)
