@@ -16,7 +16,7 @@
 
 # :two:`Bibtex to Zotero.py`
 
-- **适用于在知网文献详情页无法通过Zotero Connector导入Zotero的文献**（部分期刊存在此现象）。虽然有[油猴脚本](https://greasyfork.org/zh-CN/scripts/393305-%E7%9F%A5%E7%BD%91-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE-bibtex)可实现将NodeExpress格式转为bibtex，但往往缺少信息，故编写此程序
+- **适用于在知网文献详情页无法通过Zotero Connector导入Zotero的文献**（部分期刊存在此现象）。虽然有[油猴脚本](https://greasyfork.org/zh-CN/scripts/393305-%E7%9F%A5%E7%BD%91-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE-bibtex)可实现将NoteExpress格式转为bibtex，但往往缺少信息，故编写此程序
 - 使用Python库：**re、os、time、pyperclip、pyautogui、pprint、zhconv、selenium**（仅支持Chrome）。**运行前复制文献详情页URL（[例](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFD2005&filename=ZGSJ2005S1006&uniplatform=NZKPT&v=qCniU69B0sacew3JfcvC1dbAYKgsbW4k2_3U6v-heGugt6kJJEmibrds1mt_tkL6)），并打开Zotero目标文件夹即可**，程序将自动生成Bibtex、复制到剪切板并导入Zotero
 
 
