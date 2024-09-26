@@ -1,5 +1,7 @@
 # :one:`CNKI-JournalCrawler.py`
 
+## 注：因知网结构变动，此功能已失效
+
 - 功能：**提取知网期刊（[例](https://navi.cnki.net/knavi/journals/JGYS/detail)）的所有文章信息（标题、作者，暂不支持链接），并写入文件存储**，以便于筛选和阅读
 
 - 使用Python库：**re、os、time、pyautogui、pprint、zhconv、bs4、selenium**（仅支持Chrome）
